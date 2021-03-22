@@ -1,5 +1,9 @@
 trigger: none
 
+variables:
+  subscriptionId : "058a36cd-ad87-41c0-8431-a09e57423aee"
+  platformPrefix : "tst"
+
 stages:
 - stage: Tst
   jobs:
@@ -20,7 +24,7 @@ stages:
         azureSubscription: 'ServiceConnection'
         ScriptType: 'FilePath'
         ScriptPath: 'src/main/pwsh/AssignmentsLoop.ps1'
-        ScriptArguments: '-platformPrefix prd'
+        ScriptArguments: '-platformPrefix $(platformPrefix) -subscriptionId $(subscriptionId)'
         FailOnStandardError: true
         azurePowerShellVersion: 'LatestVersion'
 
