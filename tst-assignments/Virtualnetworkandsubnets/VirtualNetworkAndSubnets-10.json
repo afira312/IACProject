@@ -4,7 +4,7 @@
       },
     "location": "westeurope",
     "properties": {
-        "blueprintId": "/subscriptions/058a36cd-ad87-41c0-8431-a09e57423aee/providers/Microsoft.Blueprint/blueprints/VirtualNetworkAndSubnets",
+        "blueprintId": "/subscriptions/058a36cd-ad87-41c0-8431-a09e57423aee/providers/Microsoft.Blueprint/blueprints/Virtualnetworkandsubnets",
         "resourceGroups": {
             "VirtualNetworkGroup": {
                 "name": "NoteJam-Tst-Rg",
