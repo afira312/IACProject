@@ -1,0 +1,44 @@
+{
+        "properties": {
+            "parameters": {
+                "sqlServerName": {
+                    "type": "string",
+                    "metadata": {
+                      "description": "Name of the SQL server"
+                    }
+                  },
+                  "sqlAdministratorLogin": {
+                    "type": "string",
+                    "metadata": {
+                      "description": "The administrator username of the SQL Server."
+                    }
+                  },
+                  "sqlAdministratorLoginPassword": {
+                    "type": "securestring",
+                    "metadata": {
+                      "description": "The administrator password of the SQL Server."
+                    }
+                  },
+                  "databaseName": {
+                    "type": "string",
+                    "metadata": {
+                      "description": "The db name."
+                    }
+                  }
+            },
+            "targetScope": "subscription",
+            "resourceGroups": {
+                "sqlServerRG": {
+                    "metadata": {
+                        "displayName": "sqlServerRG"
+                    },
+                    "dependsOn": [],
+                    "tags": {
+                        "OWNER": "NoteJam",
+                        "DEPT": "DevOps"
+                    }
+                }
+            }
+        },
+        "type": "Microsoft.Blueprint/blueprints"
+    }

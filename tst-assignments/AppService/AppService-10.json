@@ -1,0 +1,29 @@
+{
+  "identity": {
+    "type": "systemAssigned"
+  },
+  "location": "westeurope",
+  "properties": {
+    "blueprintId": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/providers/Microsoft.Blueprint/blueprints/AppService",
+    "parameters": {
+      "location": {
+        "value": "westeurope"
+      },
+      "webAppName": {
+        "value": "notejam-app"
+      },
+      "appServicePlanName": {
+        "value": "notejam-asp"
+      },
+      "sku": {
+        "value": "S1"
+      }
+    },
+    "resourceGroups": {
+      "AppServiceGroup": {
+        "name": "NoteJam-Tst-Rg",
+        "location": "westeurope"
+      }
+    }
+  }
+}

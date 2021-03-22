@@ -1,0 +1,32 @@
+{
+    "properties": {
+        "targetScope": "subscription",
+        "parameters": {
+            "frontDoorName": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "frontDoorName"
+                }
+            },
+            "backendAddress": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "backendAddress"
+                }
+            }
+        
+        },
+        "resourceGroups": {
+            "FrontDoorGroup": {
+                "metadata": {
+                    "displayName": "FrontDoor"
+                },
+                "tags": {
+                    "OWNER": "Notejam",
+                    "DEPT": "DevOps"
+                }
+            }
+        },
+        "blueprintName": "FrontDoor"
+    }
+}

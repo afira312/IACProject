@@ -1,0 +1,31 @@
+{
+    "identity": {
+        "type": "systemAssigned"
+      },
+    "location": "westeurope",
+    "properties": {
+        "blueprintId": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/providers/Microsoft.Blueprint/blueprints/VirtualNetworkAndSubnets",
+        "resourceGroups": {
+            "VirtualNetworkGroup": {
+                "name": "NoteJam-Tst-Rg",
+                "location": "westeurope"
+            }
+        },
+        "parameters": {
+            "vnetName": {
+                "value": "tst-vnet"
+            },
+            "vnetAddressPrefix": {
+                "value": "10.2.1.0/24"
+            },
+            "subnets": {
+                "value": [
+                    {
+                        "name": "subnet1",
+                        "addressPrefix": "10.2.1.0/29"
+                    }
+                ]
+            }
+        }
+    }
+}

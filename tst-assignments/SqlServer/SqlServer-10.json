@@ -1,0 +1,34 @@
+{
+    "identity": {
+        "type": "systemAssigned"
+    },
+    "location": "westeurope",
+    "properties": {
+        "blueprintId": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/providers/Microsoft.Blueprint/blueprints/SqlServer",
+        "resourceGroups": {
+            "sqlServerRG": {
+                "name": "NoteJam-Tst-Rg",
+                "location": "westeurope"
+            }
+        },
+        "parameters": {
+            "sqlServerName": {
+                "value": "notejam-tst-sql"
+            },
+            "sqlAdministratorLoginPassword": {
+                "reference": {
+                    "keyVault": {
+                        "id": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/resourceGroups/NoteJam-Tst-Rg/providers/Microsoft.KeyVault/vaults/notejam-keyvault"
+                    },
+                    "secretName": "administratorLoginPassword"
+                }
+            },
+            "sqlAdministratorLogin": {
+                "value": "roboadmin"
+            },
+            "databaseName": {
+                "value": "notejam-tst-sql-db"
+            }
+        }
+    }
+}

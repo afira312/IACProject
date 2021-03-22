@@ -1,0 +1,49 @@
+{
+    "properties": {
+        "targetScope": "subscription",
+        "parameters": {
+            "project": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "Project"
+                }
+            },
+            "purpose": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "Purpose"
+                }
+            },
+            "objectId": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "objectID of the user or group that will have access to the vault"
+                }
+            },
+            "location": {
+                "type": "string",
+                "allowedValues": [
+                    "westeurope",
+                    "northeurope"
+                ],
+                "defaultValue": "westeurope",
+                "metadata": {
+                    "displayName": "Location"
+                }
+            }
+        },
+        "resourceGroups": {
+            "keyVaultGroup": {
+                "metadata": {
+                    "displayName": "KeyVault"
+                },
+                "tags": {
+                    "OWNER": "Notejam",
+                    "DEPT": "DevOps"
+                }
+            }
+        },
+        "description": "A key vault to contain secrets",
+        "blueprintName": "keyvault"
+    }
+}

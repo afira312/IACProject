@@ -1,0 +1,23 @@
+{
+  "identity": {
+    "type": "systemAssigned"
+  },
+  "location": "westeurope",
+  "properties": {
+    "blueprintId": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/providers/Microsoft.Blueprint/blueprints/FrontDoor",
+    "parameters": {
+      "frontDoorName": {
+        "value": "notejam-frontdoor"
+      },
+      "backendAddress": {
+        "value": "notejam-app.azurewebsites.net"
+      }
+    },
+    "resourceGroups": {
+      "FrontDoorGroup": {
+        "name": "NoteJam-Tst-Rg",
+        "location" : "westeurope"
+      }
+    }
+  }
+}

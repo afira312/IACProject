@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "targetScope": "subscription",
+    "parameters": {
+      "storageAccountName": {
+        "type": "string",
+        "metadata": {
+          "description": "storageAccountName"
+        }
+      }
+    },
+    "resourceGroups": {
+      "StorageGroup": {
+        "metadata": {
+          "displayName": "StorageAccount"
+        },
+        "tags": {
+          "OWNER": "NoteJam",
+          "DEPT": "DevOps"
+        }
+      }
+    },
+    "description": "Storage account used for backup for data",
+    "blueprintName": "storageaccount"
+  }
+}

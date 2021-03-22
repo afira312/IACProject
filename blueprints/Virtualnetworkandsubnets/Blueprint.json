@@ -1,0 +1,34 @@
+{
+    "properties": {
+        "parameters": {
+            "vnetName": {
+                "type": "string"
+            },
+            "vnetAddressPrefix": {
+                "type": "string",
+                "metadata": {
+                    "description": "Address prefix for the entire Virtual Network"
+                }
+            },
+            "subnets": {
+                "type": "array",
+                "metadata": {
+                    "description": "Array with name and addressPrefix of the subnets to add"
+                }
+            }
+        },
+        "targetScope": "subscription",
+        "resourceGroups": {
+            "VirtualNetworkGroup": {
+                "metadata": {
+                    "displayName": "VirtualNetwork"
+                },
+                "tags": {
+                    "OWNER": "NoteJam",
+                    "DEPT": "DevOps"
+                }
+            }
+        }
+    },
+    "type": "Microsoft.Blueprint/blueprints"
+}

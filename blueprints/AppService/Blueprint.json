@@ -1,0 +1,48 @@
+{
+    "properties": {
+        "targetScope": "subscription",
+        "parameters": {
+            "webAppName": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "webAppName"
+                }
+            },
+            "appServicePlanName": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "appServicePlanName"
+                }
+            },
+            "sku": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "The SKU of App Service Plan"
+                }
+            },
+            "location": {
+                "type": "string",
+                "allowedValues": [
+                    "westeurope",
+                    "northeurope"
+                ],
+                "defaultValue": "westeurope",
+                "metadata": {
+                    "displayName": "Location"
+                }
+            }
+        },
+        "resourceGroups": {
+            "AppServiceGroup": {
+                "metadata": {
+                    "displayName": "AppService"
+                },
+                "tags": {
+                    "OWNER": "Notejam",
+                    "DEPT": "DevOps"
+                }
+            }
+        },
+        "blueprintName": "AppService"
+    }
+}
