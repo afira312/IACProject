@@ -4,11 +4,11 @@
   },
   "location": "westeurope",
   "properties": {
-    "blueprintId": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/providers/Microsoft.Blueprint/blueprints/KeyVault",
+    "blueprintId": "/subscriptions/058a36cd-ad87-41c0-8431-a09e57423aee/providers/Microsoft.Blueprint/blueprints/KeyVault",
     "parameters": {
       "project": { "value": "notejam" },
       "purpose": { "value": "keyvault" },
-      "objectId": { "value": "bf59bcf1-db4f-49fa-bc51-588c24ed4f7b" },
+      "objectId": { "value": "76ff19b6-85dd-4c95-8997-ddd954ae3097" },
       "location": { "value": "westeurope" }
     },
     "resourceGroups": {

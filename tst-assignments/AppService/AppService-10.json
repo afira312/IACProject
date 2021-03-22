@@ -4,7 +4,7 @@
   },
   "location": "westeurope",
   "properties": {
-    "blueprintId": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/providers/Microsoft.Blueprint/blueprints/AppService",
+    "blueprintId": "/subscriptions/058a36cd-ad87-41c0-8431-a09e57423aee/providers/Microsoft.Blueprint/blueprints/AppService",
     "parameters": {
       "location": {
         "value": "westeurope"

@@ -4,7 +4,7 @@
     },
     "location": "westeurope",
     "properties": {
-        "blueprintId": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/providers/Microsoft.Blueprint/blueprints/SqlServer",
+        "blueprintId": "/subscriptions/058a36cd-ad87-41c0-8431-a09e57423aee/providers/Microsoft.Blueprint/blueprints/SqlServer",
         "resourceGroups": {
             "sqlServerRG": {
                 "name": "NoteJam-Tst-Rg",
@@ -18,7 +18,7 @@
             "sqlAdministratorLoginPassword": {
                 "reference": {
                     "keyVault": {
-                        "id": "/subscriptions/36c512c9-270a-45b4-8098-90d71a655097/resourceGroups/NoteJam-Tst-Rg/providers/Microsoft.KeyVault/vaults/notejam-keyvault"
+                        "id": "/subscriptions/058a36cd-ad87-41c0-8431-a09e57423aee/resourceGroups/NoteJam-Tst-Rg/providers/Microsoft.KeyVault/vaults/notejam-keyvault"
                     },
                     "secretName": "administratorLoginPassword"
                 }
