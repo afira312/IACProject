@@ -2,7 +2,7 @@
 
 This Repository is used to deploy the infrastructure of NoteJam application on Azure
 
-# Steps
+# Steps to run locally
 
 ## Step 1
 

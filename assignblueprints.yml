@@ -1,0 +1,26 @@
+trigger: none
+
+stages:
+- stage: Tst
+  jobs:
+  - job: Test
+    displayName: "Tst Infra"
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: PowerShell@2
+      displayName: "Install Az.Blueprint module"
+      inputs:
+        targetType: 'inline'
+        script: Install-Module -Name Az.Blueprint -Force -Verbose -Scope CurrentUser
+        failOnStderr: true
+    - task: AzurePowerShell@4
+      displayName: "Assignment of TST blueprints"
+      inputs:
+        azureSubscription: 'ServiceConnection'
+        ScriptType: 'FilePath'
+        ScriptPath: 'src/main/pwsh/AssignmentsLoop.ps1'
+        ScriptArguments: '-platformPrefix prd'
+        FailOnStandardError: true
+        azurePowerShellVersion: 'LatestVersion'
+
