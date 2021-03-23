@@ -21,7 +21,7 @@
             "subnets": {
                 "value": [
                     {
-                        "name": "subnet1",
+                        "name": "subnet01",
                         "addressPrefix": "10.2.1.0/29"
                     }
                 ]
